@@ -9,7 +9,9 @@ The data for this analysis is derived from the kickstarter website. The pivot ta
 
 Accompanying the pivot table is the line chart *Theater Outcomes by Launch Date* to provide visual representation of outcomes for theater campaigns based on their launch date. 
 ![Theater Outcomes by Launch Date Line Chart](/Resources/Theater_Outcomes_vs_Launch.png) 
+
 The chart *Outcomes based on Goals* surveys the outcomes of play campaigns based on their fundraising goals.
+
 ![Outcomes based on Goals](/Resources/Outcomes_vs_Goals_Chart.png)
 Fundraising goals are grouped into 12 ranges with the minimun range of less than $1,000 and the maximum range of greater than $50,000. The countifs() function is used to provide the number of successful, failed, and canceled plays for each fundraising goal range. the total projects is found using the sum() function, and the percentage of successful, failed, and canceled plays is found by dividing the the number of each outcome category by the total number of projects for that goal range. The chart *Outcomes based on Goals* is supplemented with the line chart *Outcomes based on Goals* to visually represent the precentage of successful, failed, and canceled plays based on their funraising goals. 
 ![Alt_image title](/Resources/Outcomes_vs_Goals.png) 
