@@ -6,6 +6,7 @@ This analysis aims to advise Louise on her kickstarter campaign for her play *Fe
 ### Analysis
 The data for this analysis is derived from the kickstarter website. The pivot table *Theater Outcomes by Launch date* is created from this data to evaluate the outcomes--successful,failed, and canceled--of theather campaigns based on the launch date. The fields "Parent category" and "year" is used to to filter data to show outcomes for only theater campaigns by the month it was launched.
 ![Theater Outcomes by Launch Date Table](/Resources/Theater_Outcomes_vs_Launch_Pivot.png)
+
 Accompanying the pivot table is the line chart *Theater Outcomes by Launch Date* to provide visual representation of outcomes for theater campaigns based on their launch date. 
 ![Theater Outcomes by Launch Date Line Chart](/Resources/Theater_Outcomes_vs_Launch.png) 
 The chart *Outcomes based on Goals* surveys the outcomes of play campaigns based on their fundraising goals.
