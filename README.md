@@ -12,7 +12,7 @@ A chart is created based on the kickstarter data to survey the outcomes of play 
 ### Challenges
 Challenges were encountered when calculating the number of successful, failed, and canceled plays based on their fundraising goal range. Manually entering the goal range withing the countifs() function for each of the 12 ranges became tedious and lead to mistakes as the function includes multiple criteria making it hard to read and debug. Mistakes were also made when countif() was accidentilly selected instead of countifs(). 
 
-### Analysis of Outcomes based on Launched Date
+### Analysis of Outcomes based on Launch Date
 The pivot tabel created to evaluate theater outcomes based on launch date filters the kickstarter date using the fields "Parent category" and "years". "Outcomes" is the input for columns and "Date Created Coversion" is input for the rows. "Count of outcomes" is input for the values. The resulting pivot table shows the number of theater campaigns that were either successful, failed, or canceled for each month of the year. Campaign outcomes were sorted in descending order so "successful" is displayed first. The line chart titled "Theater Outcomes Based on Launch Date" visualizes the relationship between outcomes and launch month.
 
 ![Theater Outcomes by Launch Date Table](/Resources/Theater_Outcomes_vs_Launch_Pivot.png)
