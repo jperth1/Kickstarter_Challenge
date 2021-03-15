@@ -3,26 +3,14 @@
 Analysis of kickstarter data to evaluate the outcomes of theater and play crowdfunding campaigns by examining their launch date and fundraising goals.
 ### Purpose
 This analysis aims to advise Louise on her kickstarter campaign for her play *Fever*.
+
 ### Analysis
-The data for this analysis is derived from the kickstarter website. The pivot table *Theater Outcomes by Launch Date* is created from this data to evaluate the outcomes--successful,failed, and canceled--of theather campaigns based on the launch date. The fields "Parent category" and "year" is used to to filter data to show outcomes for only theater campaigns by the month it was launched.
+The data for this analysis is derived from the kickstarter website. A pivot table is created from this data to evaluate the outcomes--successful,failed, and canceled--of theather campaigns based on the launch date. The fields "Parent category" and "year" is used to to filter data to show outcomes for only theater campaigns by the month it was launched. Accompanying the pivot table is the line chart *Theater Outcomes by Launch Date* to provide visual representation of outcomes for theater campaigns based on the launch date. 
 
-![Theater Outcomes by Launch Date Table](/Resources/Theater_Outcomes_vs_Launch_Pivot.png)
-
-Accompanying the pivot table is the line chart *Theater Outcomes by Launch Date* to provide visual representation of outcomes for theater campaigns based on the launch date. 
-![Theater_Outcomes_vs_Launch](/Resources/Theater_Outcomes_vs_Launch.png) 
-
-The chart *Outcomes based on Goals* surveys the outcomes of play campaigns based on their fundraising goals.
-
-![Outcomes based on Goals Chart](/Resources/Outcomes_vs_Goals_Chart.png)
-
-Fundraising goals are grouped into 12 ranges with the minimun range of less than $1,000 and the maximum range of greater than $50,000. The countifs() function is used to provide the number of successful, failed, and canceled plays for each fundraising goal range. the total projects is found using the sum() function, and the percentage of successful, failed, and canceled plays is found by dividing the the number of each outcome category by the total number of projects for that goal range. The chart *Outcomes based on Goals* is supplemented with the line chart *Outcomes based on Goals* to visually represent the precentage of successful, failed, and canceled plays based on their funraising goals. 
-
-![Outcomes_vs_Goals](/Resources/Outcomes_vs_Goals.png)
-
-
+A chart is created based on the kickstarter data to survey the outcomes of play campaigns based on their fundraising goals. Fundraising goals are grouped into 12 ranges with the minimun range of less than $1,000 and the maximum range of greater than $50,000. The countifs() function is used to provide the number of successful, failed, and canceled plays for each fundraising goal range. the total projects is found using the sum() function, and the percentage of successful, failed, and canceled plays is found by dividing the the number of each outcome category by the total number of projects for that goal range. The line chart *Outcomes based on Goals* supplements this chart to visually represent the relationship between precentage of successful, failed, and canceled play campaigns and their funraising goals. 
 
 ### Challenges
-Challenges were encountered when calculating the number of successful, failed, and canceled plays based on their fundraising goal range. Manually entering the goal range withing the countifs() function for each of the 12 ranges became tedious and lead to mistakes as the function included multiple criteria making it hard to read and debug, for example =COUNTIFS('Kickstarter Data'!D:D,">=10000",'Kickstarter Data'!D:D,"<=14999",'Kickstarter Data'!F:F,"failed",'Kickstarter Data'!R:R,"plays"). Mistakes were also made when countif() was accidentilly selected instead of countifs(). Both challeneges were overcome by reevaluting formula and doubling checking the correct use of expressions and number within the formula. 
+Challenges were encountered when calculating the number of successful, failed, and canceled plays based on their fundraising goal range. Manually entering the goal range withing the countifs() function for each of the 12 ranges became tedious and lead to mistakes as the function includes multiple criteria making it hard to read and debug. Mistakes were also made when countif() was accidentilly selected instead of countifs(). 
 
 ### Analysis of Outcomes based on Launched Date
 The pivot tabel created to evaluate theater outcomes based on launch date filters the kickstarter date using the fields "Parent category" and "years". "Outcomes" is the input for columns and "Date Created Coversion" is input for the rows. "Count of outcomes" is input for the values. The resulting pivot table shows the number of theater campaigns that were either successful, failed, or canceled for each month of the year. Campaign outcomes were sorted in descending order so "successful" is displayed first. The line chart titled "Theater Outcomes Based on Launch Date" visualizes the relationship between outcomes and launch month.
@@ -39,6 +27,13 @@ The tabel created to survey play outcomes based on fundraising goals breaks down
 ![Outcomes based on Goals Chart](/Resources/Outcomes_vs_Goals_Chart.png)
 
 ![Outcomes_vs_Goals](/Resources/Outcomes_vs_Goals.png)
+
+### Challenges
+Challenges and difficulties were encountered while utilizing the Countifs() function to populate the chart "Outcomes Based on Goals". Manually entering the goal range withing the countifs() function for each of the 12 ranges became tedious and lead to mistakes as the function includes multiple criteria making it hard to read and debug. For example,the following line of code shows the multiple criteria and ranges that need to be utilize to calulate the number of failed plays that had the a fundraising goal between $10,000 and $14,999:
+
+=COUNTIFS('Kickstarter Data'!D:D,">=10000",'Kickstarter Data'!D:D,"<=14999",'Kickstarter Data'!F:F,"failed",'Kickstarter Data'!R:R,"plays")
+
+Overall, it became challenging to debug a line of code like this due the various criteria needed for this one function. Additionally, challeneges were encountered when Countif() was mistaken for Countifs() and an error message was displayed citing "too many agruments were entered for this function". Ultimately, both of these challenges were overcome overcome by diligently reevalutings formula and double checking the correct use of expressions, criteria, and ranges within the each formula. 
 
 ## Results
 
