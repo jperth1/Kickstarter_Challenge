@@ -38,11 +38,13 @@ Overall, it became challenging to debug a line of code like this due the various
 ## Results
 
 ### Theater Outcomes Based on Launch Date
-The data analysis for theater outcomes based on launch date indicated that theater campaigns that launched during the month of May see the most success. 111  out of 166 campaigns , or 67% (11/166) saw success during the month of May while 55, or 33% (55/166), of those campaigns either failed or were canceled. Moreover, theater campaigns during the month of Decemeber are the least likely to successed where only 37 out of 75 campaigns--49% (37/75)--were successful, and 38 out of 75 campaigns, or 51% (38/75), either failed or were canceled. 
+The data analysis for theater outcomes based on launch date indicated that theater campaigns that launched during the month of May see the most success. 111  out of 166 campaigns , or 67% (111/166) saw success during the month of May while 55, or 33% (55/166), of those campaigns either failed or were canceled. Moreover, theater campaigns during the month of Decemeber are the least likely to successed where only 37 out of 75 campaigns--49% (37/75)--were successful, and 38 out of 75 campaigns, or 51% (38/75), either failed or were canceled. 
 
 ### Play Outcomes based on Goals
-The data analysis for play outcomes based on fundaising goals indicated that play campaigns with the fundrasing goal less than $1,000 were most likely to succeed, where 141 campaigns out of 186, or 76%, were sucessful in meeting their fundraisning goals while only 24% of campaigns failed to meet their fundraising goal. 
+The data analysis for play outcomes based on fundaising goals indicated that play campaigns with the fundrasing goal less than $1,000 were most likely to succeed, where 141 campaigns out of 186, or 76% (141/186), were sucessful in meeting their fundraisning goals while only 24% (45/186) of campaigns failed to meet their fundraising goal. 
 
 ### Limitation
+Limitation for this data set is seen primarly in it's source. Data is only derived from Kickstarter and does not include the various other crowdfunding platforms used to support startsups, artists, and non-profits. Including data from a wider variety of crowdfunding sources such as Indiegogo, GoFundMe, and Patreon would help curb biases in the data set. Moreover, the data set used in limited in its scope in that it only has data up 2017. A more accurate and percises analysis would be found if the data set included more recent data past 2017.
 
-
+### Additional Tables and Graphs
+To supplement this analysis an additional table evaluting the relationship amoung the outcomes of theater campaigns, the campaigns fundraising goal, and the average donor amount could be provided. Examining this relationship would help Louise develope a minimun donation amount to ask for when her campagin launches. A bar chart representing this table can also be provided to help the client visualize the data. 
