@@ -30,7 +30,7 @@ The table created to survey play outcomes based on fundraising goals breaks down
 ![Outcomes_vs_Goals](/Resources/Outcomes_vs_Goals.png)
 
 ### Challenges
-Challenges and difficulties were encountered while utilizing the countifs() function to populate the table for outcomes based on goals. Manually entering the goal range within the countifs() function for each of the 12 ranges became tedious and lead to mistakes as the function includes multiple criteria making it hard to reread and debug. For example, the following line of code shows the multiple criteria needed to calculate the number of failed plays with fundraising goals between $10,000 and $14,999:![image](https://user-images.githubusercontent.com/80020390/111395194-a9f9ce00-8692-11eb-9764-eaa0dc460edd.png)
+Challenges and difficulties were encountered while utilizing the countifs() function to populate the table for outcomes based on goals. Manually entering the goal range within the countifs() function for each of the 12 ranges became tedious and lead to mistakes as the function includes multiple criteria making it hard to reread and debug. For example, the following line of code shows the multiple criteria needed to calculate the number of failed plays with fundraising goals between $10,000 and $14,999:
 
 =COUNTIFS('Kickstarter Data'!D:D,">=10000",'Kickstarter Data'!D:D,"<=14999",'Kickstarter Data'!F:F,"failed",'Kickstarter Data'!R:R,"plays")
 
