@@ -1,6 +1,6 @@
 # Kickstarter Challenge
 
-## Overview of project
+## Overview of Project
 Analysis of Kickstarter data to evaluate the outcomes of theater and play crowdfunding campaigns by examining their launch dates and fundraising goals.
 
 ### Purpose
